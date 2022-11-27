@@ -93,9 +93,9 @@ export default {
       msgLog: "/img/log/msgLog.png",
       loginMsg: "登录失败,请重新登录！",
       loginData: {
-        username: "admin", // 方便测试，默认填充用户名密码
-        password: "Lv@12345",
-        captcha: "0715",
+        username: "", // 方便测试，默认填充用户名密码
+        password: "",
+        captcha: "",
         captchaId: "",
         rememberFlag: false,
       },

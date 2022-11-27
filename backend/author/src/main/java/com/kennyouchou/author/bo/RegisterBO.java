@@ -28,7 +28,7 @@ public class RegisterBO implements Serializable {
     @ApiModelProperty("密码")
     private String password;
 
-    @ApiModelProperty("性别（0：女，1：男）")
+    @ApiModelProperty("性别(0:女,1:男)")
     private Integer sex;
 
     @ApiModelProperty("地址")

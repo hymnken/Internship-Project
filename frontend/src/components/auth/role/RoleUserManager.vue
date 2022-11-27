@@ -102,7 +102,6 @@ export default {
       this.findUserHousehold() // 查询列表
     },
     onSearch(val) { // 搜索框查询
-
     },
     handlQuery(data) {
       this.pageInfo.hasNextPage = data.hasNextPage // 是否有下一页

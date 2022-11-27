@@ -74,9 +74,9 @@ export default {
       isShowSelectAddress: false,
       rememberMe: true,
       loginData: {
-        username: "admin",
-        password: "Lv@12345",
-        captcha: "7515",
+        username: "",
+        password: "",
+        captcha: "",
         captchaId: "",
         nowTimer: '',
         rememberFlag: false,

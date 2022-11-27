@@ -6,14 +6,21 @@
     <div class="col-12 m-0 p-0">
       <van-cell-group>
         <van-cell  value="缓存清理" is-link @click="cache" />
-        <van-cell  value="关于我" is-link @click="isShow" />
+        <van-cell  value="关于" is-link @click="isShow" />
         <van-cell  value="退出登录" is-link @click="logout" />
       </van-cell-group>
     </div>
     <div class="col-12 m-0 p-0">
       <van-popup class="father" v-model="show" round position="bottom" closeable :style="{ height: '30%' }" >
         <div class="row text-center">
-          <p>社区健康疫情管理系统 V1.0.0 <br/><small class="text-secondary">让社区管理更加智能高效！</small></p>
+          <p>社区健康疫情管理系统 V1.0.0 <br/><small class="text-secondary">让社区管理更加智能高效！</small><br />
+            <small>@kennyouchou小组</small><br />
+            <small>组长:王以泽</small><br />
+            <small>组员:王鑫</small><br />
+            <small>组员:金家斌</small><br />
+            <small>组员:张宇轩</small><br />
+            <small>组员:林俐</small>
+          </p>
         </div>
       </van-popup>
     </div>

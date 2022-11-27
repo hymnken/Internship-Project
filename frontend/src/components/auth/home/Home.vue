@@ -1,21 +1,34 @@
 <template>
   <div style="width: 100%">
     <NavTopBar title="首页" :leftArrow="false" :rightArrow="false" />
-    <van-swipe class="my-swipe" :autoplay="3000" style="height: 200px" indicator-color="white">
+    <van-swipe class="my-swipe" :autoplay="2000" style="height: 120px" indicator-color="white">
       <van-swipe-item>
+        <img src="../../../assets/img/hb/banner1.png" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="../../../assets/img/hb/banner2.jpg" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="../../../assets/img/hb/banner3.jpg" />
+      </van-swipe-item>
+      <van-swipe-item>
+        <img src="../../../assets/img/hb/banner4.png" />
+      </van-swipe-item>
+      <!-- <van-swipe-item>
         <img src="../../../assets/img/hb/hb2.jpg" />
       </van-swipe-item>
       <van-swipe-item>
         <img src="../../../assets/img/hb/hb1.jpg" />
-      </van-swipe-item>
+      </van-swipe-item> -->
     </van-swipe>
     <van-notice-bar left-icon="volume-o" :scrollable="false">
       <van-swipe vertical class="notice-swipe" :autoplay="3500" :show-indicators="false">
-        <van-swipe-item v-for="(value, index) in notices" :key="index">{{value}}</van-swipe-item>
+        <van-swipe-item v-for="(value, index) in notices" :key="index">{{ value }}</van-swipe-item>
       </van-swipe>
     </van-notice-bar>
     <van-grid :column-num="3">
-      <van-grid-item v-for="item in list" :key="item.id" :icon="item.icon" :text="item.resourceName" :to="item.requestPath" />
+      <van-grid-item v-for="item in list" :key="item.id" :icon="item.icon" :text="item.resourceName"
+        :to="item.requestPath" />
     </van-grid>
   </div>
 </template>
@@ -81,6 +94,9 @@ export default {
   line-height: 150px;
   text-align: center;
   background-color: #39a9ed;
+}
+.my-swipe .van-swipe-item img{
+  background-size: contain;
 }
 .notice-swipe {
   height: 40px;
