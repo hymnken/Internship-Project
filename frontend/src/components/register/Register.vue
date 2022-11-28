@@ -4,7 +4,6 @@
         <Footer />
     </div>
 </template>
-
 <script>
 import Footer from '../footer/Foter'
 import RegisterTable from './RegisterTable'
@@ -16,7 +15,5 @@ export default {
     }
 }
 </script>
-
 <style>
-
 </style>
